@@ -17,6 +17,7 @@ export default function Navigation({ profil }) {
 
   const punkte = [
     { href: '/wochen', text: 'Wochen' },
+    { href: '/auswertung', text: 'Auswertung' },
     { href: '/trend', text: 'Trend' },
   ];
 

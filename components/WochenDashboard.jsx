@@ -6,6 +6,7 @@ import FilialTabelle from './FilialTabelle';
 import WochenCharts from './WochenCharts';
 import FallListe from './FallListe';
 import CsvImport from './CsvImport';
+import WocheVerwalten from './WocheVerwalten';
 
 export default function WochenDashboard({ woche, statistik, faelle, darfSchreiben }) {
   const router = useRouter();
@@ -26,6 +27,11 @@ export default function WochenDashboard({ woche, statistik, faelle, darfSchreibe
             </button>
           </div>
           {importOffen && <CsvImport wocheId={woche.id} onFertig={neuLaden} />}
+          <WocheVerwalten
+            woche={woche}
+            hatDaten={statistik.length > 0}
+            onGeleert={() => setImportOffen(true)}
+          />
         </section>
       )}
 
