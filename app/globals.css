@@ -158,3 +158,11 @@ footer.fuss{border-top:1px solid var(--linie);padding:18px 0;font-size:12px;colo
 .verwalten-text span{font-size:12px;color:var(--text-leise);line-height:1.45}
 .btn.gefahr{background:transparent;color:var(--neg);border:1px solid var(--neg)}
 .btn.gefahr:hover{background:var(--neg);color:#fff}
+
+/* ---------- Filialauswahl und Schalter ---------- */
+.filter.leise{background:transparent;border-style:dashed;color:var(--text-leise)}
+.filter.leise:hover{border-color:var(--text-leise);color:var(--text)}
+.schalter{display:flex;gap:10px;align-items:flex-start;cursor:pointer;max-width:560px}
+.schalter input{width:17px;height:17px;margin-top:2px;accent-color:var(--gruen);cursor:pointer}
+.schalter span{font-size:13px;color:var(--text-leise);line-height:1.45}
+.schalter b{color:var(--text);display:block;font-size:13px}
